@@ -41,7 +41,7 @@ nav {
       nav ul li a {
         display: block;
         padding: 1rem 1.5rem;
-        color: black;
+        color: #212427;
         font-size: 1.3em;
         text-transform: uppercase;
         overflow: hidden;
@@ -51,7 +51,7 @@ nav {
           display: block;
           position: relative;
           font-weight: 600;
-          color: black; }
+          color: #212427; }
           nav ul li a:hover::after {
             transform: translate3d(0, 0, 0); }
         nav ul li a::after {
@@ -61,7 +61,7 @@ nav {
           left: 0;
           width: 100%;
           height: 0.2em;
-          background-color: black;
+          background-color: #212427;
           transition: opacity 300ms, transform 300ms;
           opacity: 1;
           transform: translate3d(-100%, 0, 0); }
@@ -81,18 +81,18 @@ nav {
 
 #menu-toggle {
   display: none; }
-  #menu-toggle:checked + .menu-button-container .menu-button, #menu-toggle:checked + .menu-button-container .menu-button::before, #menu-toggle:checked + .menu-button-container .menu-button::after {
-    background: rgba(255, 255, 255, 0); }
-    #menu-toggle:checked + .menu-button-container .menu-button::before {
+  #menu-toggle:checked + .menu-button-container .menu-button-r {
+    background: #212427; }
+    #menu-toggle:checked + .menu-button-container .menu-button-r::before {
       margin-top: 0px;
       transform: rotate(405deg); }
-    #menu-toggle:checked + .menu-button-container .menu-button::after {
+    #menu-toggle:checked + .menu-button-container .menu-button-r::after {
       margin-top: 0px;
       transform: rotate(-405deg); }
 
 .menu-button, .menu-button::before, .menu-button::after {
   display: block;
-  background-color: black;
+  background-color: #212427;
   position: absolute;
   height: 4px;
   width: 30px;
@@ -146,38 +146,38 @@ nav {
     background-color: #555; }
 
 .bloque_superior {
-  border-top: solid 4px black;
-  border-bottom: solid 10px black;
+  border-top: solid 4px #212427;
+  border-bottom: solid 10px #212427;
   min-height: 10rem; }
 
 .bs_cen {
-  border-left: solid 3px black;
-  border-right: solid 3px black; }
+  border-left: solid 3px #212427;
+  border-right: solid 3px #212427; }
 
 .bloque_central {
-  border-bottom: solid 10px black;
+  border-bottom: solid 10px #212427;
   min-height: calc(100vh - 10rem); }
 
 .bc_sup {
+  border-bottom: solid 4px #212427;
   display: block;
-  border-bottom: solid 4px black;
   height: 60%;
   background-color: #377581; }
 
 .bc_social {
-  border-left: solid 6px black;
-  border-right: solid 8px black; }
+  border-left: solid 6px #212427;
+  border-right: solid 8px #212427; }
   .bc_social a {
     padding-bottom: 20px; }
 
 .bc_client {
-  border-right: solid 3px black; }
+  border-right: solid 3px #212427; }
 
 .bc_ppal {
   padding-right: 6.5rem !important; }
 
 .home_tit {
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   line-height: 1em;
   font-size: 7rem;
   font-weight: 800;
@@ -191,7 +191,7 @@ nav {
   line-height: 4.2rem; }
 
 .home_com {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.7rem;
   text-align: end; }
@@ -200,7 +200,7 @@ nav {
   padding-bottom: 6rem; }
 
 .link_about {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.4rem;
   color: #C46241;
@@ -212,7 +212,7 @@ nav {
   text-decoration: none; }
   .link_about:hover {
     font-weight: 700;
-    color: #C46241; }
+    color: #d27252; }
   .link_about::after {
     content: '';
     position: absolute;
@@ -224,24 +224,24 @@ nav {
     opacity: 1; }
 
 .bc_col {
-  border-right: solid 4px black; }
+  border-right: solid 4px #212427; }
 
 .bs_verde {
-  background-color: #377581;
-  border-right: solid 3px black; }
+  border-right: solid 3px #212427;
+  background-color: #377581; }
 
 .bc_about_sup {
-  min-height: calc(100vh - 10rem);
-  border-bottom: solid 10px black; }
+  border-bottom: solid 10px #212427;
+  min-height: calc(100vh - 10rem); }
 
 .b_titulo_ab {
   font-size: 4rem;
   font-weight: 700; }
 
 .b_cent_ab {
-  border-top: solid 3px black;
-  border-bottom: solid 3px black;
-  font-family: 'Montserrat', sans-serif;
+  border-top: solid 3px #212427;
+  border-bottom: solid 3px #212427;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   overflow-y: auto; }
 
@@ -249,12 +249,12 @@ nav {
   min-height: 8%; }
 
 .rect_n {
-  background-color: #C46241;
-  border-left: solid 3px black;
-  border-right: solid 4px black; }
+  border-left: solid 3px #212427;
+  border-right: solid 4px #212427;
+  background-color: #C46241; }
 
 .menu_works {
-  border-right: solid 10px black; }
+  border-right: solid 10px #212427; }
 
 .cont_over {
   overflow-y: auto;
@@ -265,13 +265,13 @@ nav {
   font-size: 3rem;
   margin: 10px 0px;
   text-decoration: none;
-  color: black;
+  color: #212427;
   text-transform: uppercase;
   text-align: end;
   border-bottom: solid 10px #377581; }
   .work:hover {
     font-weight: 400;
-    color: black; }
+    color: #212427; }
   .work .material-symbols-outlined {
     display: none; }
 
@@ -290,12 +290,12 @@ nav {
   text-transform: uppercase; }
 
 .det_w {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1.8em; }
 
 .b_border {
-  border-right: solid 10px black; }
+  border-right: solid 10px #212427; }
 
 .b_titulo_ct {
   font-size: 14em;
@@ -309,15 +309,15 @@ nav {
   text-transform: uppercase; }
 
 .b_social {
-  padding: 30px;
-  border-right: solid 3px black; }
+  border-right: solid 3px #212427;
+  padding: 30px; }
 
 .b_cent_ac {
-  border-top: solid 3px black;
-  border-bottom: solid 3px black;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  background-color: #C46241; }
+  border-top: solid 3px #212427;
+  border-bottom: solid 3px #212427;
+  font-family: "Montserrat", sans-serif;
+  background-color: #C46241;
+  font-size: 1.5rem; }
 
 .formulario, .formulario div, .formulario label {
   background: none; }
@@ -386,11 +386,13 @@ nav {
     overflow-y: hidden;
     max-height: calc(100vh * 10); }
   .work {
+    border-bottom: solid 7px #377581;
     font-size: 2rem;
-    margin: 5px 0px;
-    border-bottom: solid 7px #377581; }
+    margin: 5px 0px; }
   .work_sel .material-symbols-outlined {
     font-size: 1.5rem;
     display: inline; }
   .top {
-    background: none; } }
+    background: none; }
+  .b_border {
+    border-right: none; } }

@@ -1,34 +1,34 @@
-.b_border{
-    border-right: solid 10px black;
+.b_border {
+    @include border('right', 10px, $line-color);
 }
 
-.b_titulo_ct{
+.b_titulo_ct {
     font-size: 14em;
     font-weight: 900;
     line-height: 16rem;
     text-transform: uppercase;
 }
 
-.b_sub_titulo_ct{
+.b_sub_titulo_ct {
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.b_social{
+.b_social {
+    @include border('right', 3px, $line-color);
     padding: 30px;
-    border-right: solid 3px black;
 }
 
-.b_cent_ac{
-    border-top: solid 3px black;
-    border-bottom: solid 3px black;
-    font-family: 'Montserrat', sans-serif;
+.b_cent_ac {
+    @include border('top', 3px, $line-color);
+    @include border('bottom', 3px, $line-color);
+    font-family: $secondary-font;
+    background-color: $primary-color;
     font-size: 1.5rem;
-    background-color: #C46241;
 }
 
-.formulario{
+.formulario {
     background: none;
     div {
         @extend .formulario;
@@ -38,15 +38,15 @@
     }
 }
 
-.form-floating{
+.form-floating {
     font-weight: 500 !important;
 }
 
-.inputfont{
+.inputfont {
     font-size: 1.5rem !important;
     font-weight: 500 !important;
 }
 
-.txarea{
+.txarea {
     height: 100px !important;
 }

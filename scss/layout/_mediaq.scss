@@ -1,6 +1,6 @@
 @media (max-width: 991px) {
     .bs_cen{
-        background-color: #C46241;
+        background-color: $primary-color;
     }
     nav{
         justify-content: flex-end;
@@ -20,8 +20,7 @@
                     display: none;
                 }
             }
-        }
-        
+        }        
     }
     .menu-button-container {
         display: flex;
@@ -81,9 +80,9 @@
         max-height: calc(100vh * 10);
     }
     .work{
+        @include border('bottom', 7px, $secondary-color);
         font-size: 2rem;
         margin: 5px 0px;
-        border-bottom: solid 7px #377581;
     }
     .work_sel {
         .material-symbols-outlined {
@@ -93,5 +92,9 @@
     }
     .top{
         background: none;
+    }
+
+    .b_border {
+        border-right: none;
     }
   }

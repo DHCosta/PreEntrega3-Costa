@@ -1,36 +1,36 @@
 .bloque_superior{
-    border-top: solid 4px black;
-    border-bottom: solid 10px black;
+    @include border('top', 4px, $line-color);
+    @include border('bottom', 10px, $line-color);
     min-height: 10rem;
 }
 
 .bs_cen{
-    border-left: solid 3px black;
-    border-right: solid 3px black;  
+    @include border('left', 3px, $line-color);
+    @include border('right', 3px, $line-color);
 }
 
 .bloque_central{
-    border-bottom: solid 10px black;
-    min-height: calc(100vh - 10rem);
+    @include border('bottom', 10px, $line-color);
+    min-height: $alto-bloque-cent;
 }
 
 .bc_sup{
+    @include border('bottom', 4px, $line-color);
     display: block;
-    border-bottom: solid 4px black;
     height: 60%;
-    background-color: #377581;
+    background-color: $secondary-color;
 }
 
 .bc_social{
-    border-left: solid 6px black;
-    border-right: solid 8px black;
+    @include border('left', 6px, $line-color);
+    @include border('right', 8px, $line-color);
     a{
         padding-bottom: 20px;
     }
 }
 
 .bc_client{
-    border-right: solid 3px black;
+    @include border('right', 3px, $line-color);
 }
 
 .bc_ppal{
@@ -38,7 +38,7 @@
 }
 
 .home_tit{
-    font-family: 'Barlow', sans-serif;
+    font-family: $primary-font;
     line-height: 1em;
     font-size: 7rem;
     font-weight: 800;
@@ -54,7 +54,7 @@
 }
 
 .home_com{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $secondary-font;
     font-weight: 400;
     font-size: 1.7rem;
     text-align: end;
@@ -65,10 +65,10 @@
 }
 
 .link_about{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $secondary-font;
     font-weight: 600;
     font-size: 1.4rem;
-    color: #C46241;
+    color: $primary-color;
     padding: 0.1rem 0;
     text-align: center;
     text-transform: uppercase;
@@ -77,7 +77,7 @@
     text-decoration: none;
     &:hover{
         font-weight: 700;
-        color: #C46241;
+        color: $primary-soft-color;
     }
     &::after{
         content: '';
@@ -86,7 +86,7 @@
         left: 0;    
         width: 100%;
         height: 0.2em;
-        background-color:#C46241;
+        background-color: $primary-color;
         opacity: 1;
     }
 }
