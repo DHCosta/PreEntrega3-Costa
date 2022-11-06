@@ -67,7 +67,7 @@ nav {
     &:checked {
         + .menu-button-container {
             .menu-button-r{
-                background: $font-color;
+                background: $back-color;
                 &::before{
                     margin-top: 0px;
                     transform: rotate(405deg);
