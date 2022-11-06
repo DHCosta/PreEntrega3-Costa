@@ -25,6 +25,18 @@ input {
   -webkit-appearance: none;
   border-radius: 0; }
 
+.fadeIn2s {
+  animation: fadeIn;
+  animation-duration: 2s; }
+
+.fadeIn3s {
+  animation: fadeIn;
+  animation-duration: 3s; }
+
+.fadeIn4s {
+  animation: fadeIn;
+  animation-duration: 4s; }
+
 nav {
   display: flex;
   align-items: center;

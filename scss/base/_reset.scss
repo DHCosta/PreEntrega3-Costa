@@ -30,3 +30,13 @@ input{
     -webkit-appearance: none;
     border-radius: 0;
 }
+
+.fadeIn2s {
+    @include fadeIn2s
+}
+.fadeIn3s {
+    @include fadeIn3s
+}
+.fadeIn4s {
+    @include fadeIn4s
+}
