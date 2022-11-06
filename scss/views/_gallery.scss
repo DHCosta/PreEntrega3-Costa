@@ -1,0 +1,50 @@
+.menu_works{
+    border-right: solid 10px black;
+}
+
+.cont_over{
+    overflow-y: auto;
+    max-height: calc(100vh - 10rem - 10px);
+}
+
+.work{
+    font-weight: 200;
+    font-size: 3rem;
+    margin: 10px 0px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    text-align: end;
+    border-bottom: solid 10px #377581;
+    &:hover{
+        font-weight: 400;
+        color: black;
+    }
+    .material-symbols-outlined{
+        display: none;
+    }
+}
+
+.work_sel{
+    font-weight: 700;
+    color: #377581;
+    &:hover{
+        font-weight: 700;
+        color: #377581;
+    }
+    .material-symbols-outlined {
+        display: inline;  
+    }
+}
+
+.b_titulo_w{
+    font-size: 10rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.det_w{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.8em;
+}

@@ -1,0 +1,44 @@
+.bt_contacto {
+    background-color: #C46241;
+    border-left: solid 3px black;
+    align-items: center;
+    justify-content: center;
+    color: #EEEEEE;
+    font-weight: 400;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    text-decoration: none; 
+    &:hover{
+        color: #EEEEEE;
+        background-color: #d27252;
+    }
+}
+
+.formbtn{
+    background-color: #377581 !important;
+    border-color:  #377581 !important;
+    font-size: 1.5rem !important;
+    &:hover{
+        background-color: #507981 !important;
+        border-color: #507981 !important;
+    }
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    &:hover{
+        background-color: #555;
+    }
+}

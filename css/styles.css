@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE; }
+  *:before {
+    box-sizing: inherit; }
+  *:after {
+    box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Barlow', 'Montserrat', sans-serif;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none; }
+
+ol, ul {
+  list-style: none; }
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    nav ul li {
+      margin: 0 0.5rem;
+      overflow: hidden; }
+      nav ul li a {
+        display: block;
+        padding: 1rem 1.5rem;
+        color: black;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        overflow: hidden;
+        font-weight: 500;
+        text-decoration: none; }
+        nav ul li a:hover {
+          display: block;
+          position: relative;
+          font-weight: 600;
+          color: black; }
+        nav ul li a::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 0.2em;
+          background-color: black;
+          transition: opacity 300ms, transform 300ms;
+          opacity: 1;
+          transform: translate3d(-100%, 0, 0); }
+        nav ul li a::hover::after {
+          transform: translate3d(0, 0, 0); }
+        nav ul li a::focus::after {
+          transform: translate3d(0, 0, 0); }
+
+/* inicio navbar burger*/
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: none; }
+
+#menu-toggle {
+  display: none; }
+  #menu-toggle:checked + .menu-button-container .menu-button, #menu-toggle:checked + .menu-button-container .menu-button::before, #menu-toggle:checked + .menu-button-container .menu-button::after {
+    background: rgba(255, 255, 255, 0); }
+    #menu-toggle:checked + .menu-button-container .menu-button::before {
+      margin-top: 0px;
+      transform: rotate(405deg); }
+    #menu-toggle:checked + .menu-button-container .menu-button::after {
+      margin-top: 0px;
+      transform: rotate(-405deg); }
+
+.menu-button, .menu-button::before, .menu-button::after {
+  display: block;
+  background-color: black;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px; }
+  .menu-button::before {
+    content: '';
+    margin-top: -8px; }
+  .menu-button::after {
+    content: '';
+    margin-top: 8px; }
+
+/* fin navbar burger*/
+.bt_contacto {
+  background-color: #C46241;
+  border-left: solid 3px black;
+  align-items: center;
+  justify-content: center;
+  color: #EEEEEE;
+  font-weight: 400;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .bt_contacto:hover {
+    color: #EEEEEE;
+    background-color: #d27252; }
+
+.formbtn {
+  background-color: #377581 !important;
+  border-color: #377581 !important;
+  font-size: 1.5rem !important; }
+  .formbtn:hover {
+    background-color: #507981 !important;
+    border-color: #507981 !important; }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px; }
+  #myBtn:hover {
+    background-color: #555; }
+
+.bloque_superior {
+  border-top: solid 4px black;
+  border-bottom: solid 10px black;
+  min-height: 10rem; }
+
+.bs_cen {
+  border-left: solid 3px black;
+  border-right: solid 3px black; }
+
+.bloque_central {
+  border-bottom: solid 10px black;
+  min-height: calc(100vh - 10rem); }
+
+.bc_sup {
+  display: block;
+  border-bottom: solid 4px black;
+  height: 60%;
+  background-color: #377581; }
+
+.bc_social {
+  border-left: solid 6px black;
+  border-right: solid 8px black; }
+  .bc_social a {
+    padding-bottom: 20px; }
+
+.bc_client {
+  border-right: solid 3px black; }
+
+.bc_ppal {
+  padding-right: 6.5rem !important; }
+
+.home_tit {
+  font-family: 'Barlow', sans-serif;
+  line-height: 1em;
+  font-size: 7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: end;
+  padding: 8rem 0; }
+
+.home_tit_front {
+  font-size: 0.3em;
+  font-weight: 600;
+  line-height: 4.2rem; }
+
+.home_com {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: end; }
+
+.home_tit_com {
+  padding-bottom: 6rem; }
+
+.link_about {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #C46241;
+  padding: 0.1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  text-decoration: none; }
+  .link_about:hover {
+    font-weight: 700;
+    color: #C46241; }
+  .link_about::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2em;
+    background-color: #C46241;
+    opacity: 1; }
+
+.bc_col {
+  border-right: solid 4px black; }
+
+.bs_verde {
+  background-color: #377581;
+  border-right: solid 3px black; }
+
+.bc_about_sup {
+  min-height: calc(100vh - 10rem);
+  border-bottom: solid 10px black; }
+
+.b_titulo_ab {
+  font-size: 4rem;
+  font-weight: 700; }
+
+.b_cent_ab {
+  border-top: solid 3px black;
+  border-bottom: solid 3px black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  overflow-y: auto; }
+
+.rect_inf {
+  min-height: 8%; }
+
+.rect_n {
+  background-color: #C46241;
+  border-left: solid 3px black;
+  border-right: solid 4px black; }
+
+.menu_works {
+  border-right: solid 10px black; }
+
+.cont_over {
+  overflow-y: auto;
+  max-height: calc(100vh - 10rem - 10px); }
+
+.work {
+  font-weight: 200;
+  font-size: 3rem;
+  margin: 10px 0px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  text-align: end;
+  border-bottom: solid 10px #377581; }
+  .work:hover {
+    font-weight: 400;
+    color: black; }
+  .work .material-symbols-outlined {
+    display: none; }
+
+.work_sel {
+  font-weight: 700;
+  color: #377581; }
+  .work_sel:hover {
+    font-weight: 700;
+    color: #377581; }
+  .work_sel .material-symbols-outlined {
+    display: inline; }
+
+.b_titulo_w {
+  font-size: 10rem;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.det_w {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.8em; }
+
+.b_border {
+  border-right: solid 10px black; }
+
+.b_titulo_ct {
+  font-size: 14em;
+  font-weight: 900;
+  line-height: 16rem;
+  text-transform: uppercase; }
+
+.b_sub_titulo_ct {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.b_social {
+  padding: 30px;
+  border-right: solid 3px black; }
+
+.b_cent_ac {
+  border-top: solid 3px black;
+  border-bottom: solid 3px black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  background-color: #C46241; }
+
+.formulario, .formulario div, .formulario label {
+  background: none; }
+
+.form-floating {
+  font-weight: 500 !important; }
+
+.inputfont {
+  font-size: 1.5rem !important;
+  font-weight: 500 !important; }
+
+.txarea {
+  height: 100px !important; }
+
+@media (max-width: 991px) {
+  .bs_cen {
+    background-color: #C46241; }
+  nav {
+    justify-content: flex-end;
+    padding-right: 6.5rem !important; }
+    nav ul {
+      z-index: 2;
+      position: absolute;
+      top: 10rem;
+      margin-top: 0px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center; }
+      nav ul li a::after {
+        display: none; }
+  .menu-button-container {
+    display: flex; }
+  #menu-toggle ~ ul li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    background: none; }
+  #menu-toggle:checked ~ ul li {
+    height: 5rem;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    background: none; }
+  ul li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #d6d6d6; }
+  .home_tit {
+    font-size: 5.5rem; }
+  .home_com {
+    font-size: 1.5rem; }
+  .link_about {
+    font-size: 1.2rem; }
+  .menu_works {
+    border-right: none; }
+  .b_titulo_w {
+    font-size: 7rem; }
+  .cont_over {
+    overflow-y: hidden;
+    max-height: calc(100vh * 10); }
+  .work {
+    font-size: 2rem;
+    margin: 5px 0px;
+    border-bottom: solid 7px #377581; }
+  .work_sel .material-symbols-outlined {
+    font-size: 1.5rem;
+    display: inline; }
+  .top {
+    background: none; } }

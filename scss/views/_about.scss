@@ -1,0 +1,36 @@
+.bc_col{
+    border-right: solid 4px black;
+}
+
+.bs_verde{
+    background-color: #377581;
+    border-right: solid 3px black;
+}
+
+.bc_about_sup{
+    min-height: calc(100vh - 10rem);
+    border-bottom: solid 10px black;
+}
+
+.b_titulo_ab{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.b_cent_ab{
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    overflow-y:auto;
+}
+
+.rect_inf{
+    min-height: 8%;
+}
+
+.rect_n{
+    background-color: #C46241;
+    border-left: solid 3px black;
+    border-right: solid 4px black;
+}
