@@ -205,8 +205,9 @@ nav {
 .home_com {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 1.7rem;
-  text-align: end; }
+  font-size: 1.5rem;
+  text-align: end;
+  padding-left: 20rem; }
 
 .home_tit_com {
   padding-bottom: 6rem; }
