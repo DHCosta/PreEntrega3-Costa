@@ -1,0 +1,12 @@
+@import './base/reset.scss';
+
+@import './layout/navigation';
+
+@import './components/buttons';
+
+@import './views/index';
+@import './views/about';
+@import './views/gallery';
+@import './views/contact';
+
+@import './layout/mediaq';
